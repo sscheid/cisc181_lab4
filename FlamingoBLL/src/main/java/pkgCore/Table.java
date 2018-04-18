@@ -3,6 +3,7 @@ package pkgCore;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.UUID;
+import pkgCore.Player;
 
 public class Table {
 
@@ -17,19 +18,22 @@ public class Table {
 	public void AddPlayerToTable(Player p)
 	{
 		//TODO: Implement this method
+		this.hmTablePlayers.put(p.getPlayerID(), p);
 	}
 	public void RemovePlayerFromTable(Player p)
 	{
-		//TODO: Implement this method		
+		//TODO: Implement this method	
+		this.hmTablePlayers.remove(p.getPlayerID());
 	}
 	
 	public Player GetPlayerFromTable(Player p)
 	{
 		//TODO: Implement this method	
-		return null;
+		return hmTablePlayers.get(p.getPlayerID());
 	}
 	public void ClearTable()
 	{
 		//TODO: Implement this method	
+		hmTablePlayers.clear();
 	}
 }

@@ -1,12 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import java.lang.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.BorderPane?>
 
-<BorderPane prefHeight="589.0" prefWidth="483.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" stylesheets="@GameTheme.css" fx:controller="app.controller.BlackJackController">
+<BorderPane prefHeight="589.0" prefWidth="483.0" stylesheets="@GameTheme.css" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.controller.BlackJackController">
+   <bottom>
+      <ButtonBar prefHeight="40.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <buttons>
+          <Button mnemonicParsing="false" text="Sit/Leave" />
+            <Button mnemonicParsing="false" text="Hit" />
+            <Button mnemonicParsing="false" text="Stand" />
+        </buttons>
+      </ButtonBar>
+   </bottom>
    <top>
-      <Label text="BlackJack" BorderPane.alignment="CENTER" />
+      <BorderPane prefHeight="363.0" prefWidth="484.0" BorderPane.alignment="CENTER">
+         <top>
+            <Label text="BlackJack" BorderPane.alignment="CENTER" />
+         </top>
+         <center>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../img/3.png" />
+               </image>
+            </ImageView>
+         </center>
+         <bottom>
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../img/card_back.png" />
+               </image>
+            </ImageView>
+         </bottom>
+      </BorderPane>
    </top>
+   <center>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+         <image>
+            <Image url="@../../../img/14.png" />
+         </image>
+      </ImageView>
+   </center>
 </BorderPane>
