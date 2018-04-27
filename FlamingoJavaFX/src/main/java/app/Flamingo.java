@@ -44,6 +44,10 @@ public class Flamingo extends Application {
 		this.appPlayer = player;
 	}
 	
+	public Player getAppPlayer() {
+		return appPlayer;
+	}
+	
 	public void showPoker(boolean bStartHub, String strComputerName, int iPort, String strPlayerName) {
 
 		if (bStartHub) {
@@ -118,6 +122,11 @@ public class Flamingo extends Application {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+	
+
+	public void SendMessageToClient(Object Message) {
+		gClient.messageSend(Message);
 	}
 	
 	public void ShowBlackJack()

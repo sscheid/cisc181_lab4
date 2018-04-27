@@ -21,5 +21,7 @@ public class TableTest {
 		t.RemovePlayerFromTable(p3);
 		assertEquals(t.GetPlayerFromTable(p3),null);
 	}
+	
+	
 
 }
